@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List EnableRating="true" EnableModeration="true">
+  <Url>Logos</Url>
+  <Name>Logos</Name>
+  <Description>Logos que se van a visualizar en los enlaces configurables.</Description>
+  
+</List>

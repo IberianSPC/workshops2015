@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List>
+  <Url>Persona</Url>
+  <Name>Persona</Name>
+  <Description>Lista de los personas que vienen al Workshop</Description>
+  <ContentTypes>
+    <ContentType LCID="3082" Name="Persona CEUS" />
+  </ContentTypes>
+</List>

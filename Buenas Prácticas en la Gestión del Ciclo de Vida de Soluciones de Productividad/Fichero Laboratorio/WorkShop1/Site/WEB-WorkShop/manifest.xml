@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Site>
+  <RelativeUrl>/WorkShop</RelativeUrl>
+  <Name>WorkShop</Name>
+  <Description>Workshop</Description>
+  <Template>STS#0</Template>
+  <Language>3082</Language>
+  <SiteMasterPage>/_catalogs/masterpage/seattle.master</SiteMasterPage>
+  <SystemMasterPage>/_catalogs/masterpage/seatlle.master</SystemMasterPage>
+</Site>

@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEUS.Wokshop.Provider", "CEUS.Wokshop.Provider\CEUS.Wokshop.Provider.csproj", "{A72ADA62-B490-4B3E-A33D-0F504854AAFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEUS.Wokshop.ProviderWeb", "CEUS.Wokshop.ProviderWeb\CEUS.Wokshop.ProviderWeb.csproj", "{51064592-BB0A-4C9A-B8BD-6EFE32C6F439}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEUS.WorkShop.TestLoad", "CEUS.WorkShop.TestLoad\CEUS.WorkShop.TestLoad.csproj", "{E8CABACC-4C33-46D8-AE1B-3B99E7B40E1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A935C8D7-25EC-447E-B724-12F415F7BB68}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEUS.WorkShop.TestUI", "CEUS.WorkShop.TestUI\CEUS.WorkShop.TestUI.csproj", "{3F7CFAAD-1B97-4F44-8C88-792ED88040EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEUS.WorkShop.Test", "CEUS.WorkShop.Test\CEUS.WorkShop.Test.csproj", "{46F026A1-CF2D-488F-840F-EA06BA37E5A9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://adriandiazcervera.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CEUS.Wokshop.Provider\\CEUS.Wokshop.Provider.csproj
+		SccProjectName1 = CEUS.Wokshop.Provider
+		SccLocalPath1 = CEUS.Wokshop.Provider
+		SccProjectUniqueName2 = CEUS.Wokshop.ProviderWeb\\CEUS.Wokshop.ProviderWeb.csproj
+		SccProjectName2 = CEUS.Wokshop.ProviderWeb
+		SccLocalPath2 = CEUS.Wokshop.ProviderWeb
+		SccProjectUniqueName3 = CEUS.WorkShop.TestLoad\\CEUS.WorkShop.TestLoad.csproj
+		SccProjectName3 = CEUS.WorkShop.TestLoad
+		SccLocalPath3 = CEUS.WorkShop.TestLoad
+		SccProjectUniqueName4 = CEUS.WorkShop.TestUI\\CEUS.WorkShop.TestUI.csproj
+		SccProjectName4 = CEUS.WorkShop.TestUI
+		SccLocalPath4 = CEUS.WorkShop.TestUI
+		SccProjectUniqueName5 = CEUS.WorkShop.Test\\CEUS.WorkShop.Test.csproj
+		SccProjectName5 = CEUS.WorkShop.Test
+		SccLocalPath5 = CEUS.WorkShop.Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A72ADA62-B490-4B3E-A33D-0F504854AAFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72ADA62-B490-4B3E-A33D-0F504854AAFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72ADA62-B490-4B3E-A33D-0F504854AAFB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A72ADA62-B490-4B3E-A33D-0F504854AAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72ADA62-B490-4B3E-A33D-0F504854AAFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72ADA62-B490-4B3E-A33D-0F504854AAFB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{51064592-BB0A-4C9A-B8BD-6EFE32C6F439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51064592-BB0A-4C9A-B8BD-6EFE32C6F439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51064592-BB0A-4C9A-B8BD-6EFE32C6F439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51064592-BB0A-4C9A-B8BD-6EFE32C6F439}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8CABACC-4C33-46D8-AE1B-3B99E7B40E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8CABACC-4C33-46D8-AE1B-3B99E7B40E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8CABACC-4C33-46D8-AE1B-3B99E7B40E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8CABACC-4C33-46D8-AE1B-3B99E7B40E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7CFAAD-1B97-4F44-8C88-792ED88040EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7CFAAD-1B97-4F44-8C88-792ED88040EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7CFAAD-1B97-4F44-8C88-792ED88040EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7CFAAD-1B97-4F44-8C88-792ED88040EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F026A1-CF2D-488F-840F-EA06BA37E5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F026A1-CF2D-488F-840F-EA06BA37E5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F026A1-CF2D-488F-840F-EA06BA37E5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F026A1-CF2D-488F-840F-EA06BA37E5A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

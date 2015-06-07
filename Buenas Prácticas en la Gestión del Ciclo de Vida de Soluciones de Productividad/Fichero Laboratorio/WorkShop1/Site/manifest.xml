@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Site>
+  <RelativeUrl>/</RelativeUrl>
+  <Name>Sareb</Name>
+  <Description>Sareb</Description>
+  <Template>BLANKINTERNET#0</Template>
+  <Language>3082</Language>
+  <SiteMasterPage>/_catalogs/masterpage/SarebPublishing.master</SiteMasterPage>
+  <SystemMasterPage>/_catalogs/masterpage/SarebTeamSite.master</SystemMasterPage>
+  <SiteFeatures>        
+    <Feature Id="36544770-eeef-4b76-8196-37c79d85193d" />
+    <Feature Id="96527146-32fe-4170-93bd-ca040bcae5ee" />
+    <Feature Id="54ceb071-1acc-4894-a922-83a878636def" />
+    <Feature Id="71708767-1eb4-49bd-bc4b-75168ff49661" />    
+    <Feature Id="a816bba3-3606-41b3-bf19-7ad5b63f557c" />
+    <Feature Id="4c58b67e-57e8-438a-bdea-718469f84df1" />
+  </SiteFeatures>
+  <WebFeatures>
+   
+  </WebFeatures>
+  <PropertyBugs>
+    <Value Key="ActiveDirectoryEntryPath" Val="LDAP://OU=Sareb,OU=Usuarios,DC=SAREB,DC=dev" />      
+    <Value Key="ADConfiguration" Val="LDAP://DC=SPDEV,DC=COM" />   
+    <Value Key="ActiveDirectoryUser" Val="devintranet" />   
+    <Value Key="ActiveDirectoryPass" Val="Sareb2015" />   
+  </PropertyBugs>
+
+</Site>

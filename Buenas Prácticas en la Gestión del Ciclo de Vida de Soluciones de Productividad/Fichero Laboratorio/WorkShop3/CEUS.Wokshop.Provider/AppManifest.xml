@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="CEUSWokshopProvider"
+     ProductID="{d32c1fb6-8f3b-46e8-8823-8d110526839d}"
+     Version="1.0.0.0"
+     SharePointMinVersion="16.0.0.0"
+>
+  <Properties>
+    <Title>CEUS.Wokshop.Provider</Title>
+    <StartPage>https://workshopsceus.azurewebsites.net/?{StandardTokens}</StartPage>
+  </Properties>
+
+  <AppPrincipal>
+    <RemoteWebApplication ClientId="403222b6-373e-44c4-9b84-c4c1c896bfae" />
+  </AppPrincipal>
+</App>

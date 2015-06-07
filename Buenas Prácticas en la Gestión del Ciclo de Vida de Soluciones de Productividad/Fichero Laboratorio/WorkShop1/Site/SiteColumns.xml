@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Site>
+  <SiteColumns>    
+    <Add
+        Id="009246d9-1d2f-49e0-933d-b33ce03c1a81"
+        FieldType="DateTime"
+        Name="CEUSFechaNacimiento"
+        DisplayName="Fecha de nacimiento"
+        StaticName="CEUSFechaNacimiento"
+        Group="WorkShop Ceus SiteColumns"
+        Hidden="False"
+        Required="True"
+        Sealed="False"
+        ShowInDisplayForm="True"
+        ShowInEditForm="True"
+        ShowInListSettings="True"
+        ShowInNewForm="True">
+      <DisplayNames>
+        <DisplayName Label="es-ES" Value="Fecha de nacimiento" />
+      </DisplayNames>
+    </Add>
+  <Add
+      Id="A26949E9-1F69-43CB-9EA3-880F451A70BE"
+      FieldType="Text"
+      Name="CEUSNombre"
+      DisplayName="Nombre"
+      StaticName="CEUSNombre"
+      Group="WorkShop Ceus SiteColumns"
+      Hidden="False"
+      Required="False"
+      Sealed="False"
+      ShowInDisplayForm="True"
+      ShowInEditForm="True"
+      ShowInListSettings="True"
+      ShowInNewForm="True">
+      <DisplayNames>
+        <DisplayName Label="es-ES" Value="Nombre" />
+      </DisplayNames>
+    </Add>
+    <Add
+    Id="2EF1BE2D-B02B-4782-84C5-729CE5F5D8DF"
+    FieldType="Text"
+    Name="CEUSApellidos"
+    DisplayName="Apellidos"
+    StaticName="CEUSApellidos"
+    Group="WorkShop Ceus SiteColumns"
+    Hidden="False"
+    Required="False"
+    Sealed="False"
+    ShowInDisplayForm="True"
+    ShowInEditForm="True"
+    ShowInListSettings="True"
+    ShowInNewForm="True">
+      <DisplayNames>
+        <DisplayName Label="es-ES" Value="Nombre" />
+      </DisplayNames>
+    </Add> 
+  </SiteColumns>
+</Site>

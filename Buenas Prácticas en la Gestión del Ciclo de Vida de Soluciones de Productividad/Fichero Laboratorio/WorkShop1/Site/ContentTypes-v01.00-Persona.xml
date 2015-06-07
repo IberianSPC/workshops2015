@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Site>
+  <ContentTypes>
+    <Add
+      Id="0x0100655593407AD04FE0B1B77FCBCD12806B"
+      Parent="Item"
+      Name="Persona CEUS"
+      DisplayName="Persona CEUS"
+      StaticName="Persona CEUS"
+      Group="WorkShop Ceus Content Types"
+      Description="">
+      <DisplayNames>
+        <DisplayName Label="es-ES" Value="Persona CEUS" />
+      </DisplayNames>
+      <Fields>
+        <Add InternalName="CEUSFechaNacimiento" />
+        <Add InternalName="CEUSNombre" />
+        <Add InternalName="CEUSApellidos" />
+      </Fields>
+    </Add>    
+  </ContentTypes>
+</Site>
