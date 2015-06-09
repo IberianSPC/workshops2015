@@ -1,0 +1,17 @@
+<Configuration>
+	<Package Id="Contoso">
+		<Setting Id="LAUNCHEDFROMSETUPSTS" Value="Yes"/>
+	</Package>
+
+	<Package Id="spswfe">
+		<Setting Id="SETUPCALLED" Value="1"/>
+	</Package>
+
+	<Logging Type="Verbose" Path="D:\Temp" Template="SharePoint 2013 (*).log"/>
+	<PIDKEY Value="NQTMW-K63MQ-39G6H-B2CH9-FRDWJ" />
+	<Display Level="Basic" CompletionNotice="no" SuppressModal="Yes" AcceptEula="Yes" />
+	<Setting Id="SERVERROLE" Value="APPLICATION"/>
+	<Setting Id="USINGUIINSTALLMODE" Value="0"/>
+	<Setting Id="SETUP_REBOOT" Value="Never" />
+	<Setting Id="SETUPTYPE" Value="CLEAN_INSTALL"/>
+</Configuration>

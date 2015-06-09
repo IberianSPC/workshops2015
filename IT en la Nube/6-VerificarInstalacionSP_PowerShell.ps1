@@ -1,0 +1,2 @@
+If ((Get-PSSnapin -Registered *SharePoint*)) {cls; echo "*****     SharePoint Server 2013 has been successfully installed.     *****"; echo "*****     The Database and Farm components can now be configured.     *****"} 
+	Else {cls; echo "*****     SharePoint 2013 has not been installed on this system.     *****"; echo "*****     Please check the SharePoint Log file if a previous setup attempt was not successful.     *****"} 
