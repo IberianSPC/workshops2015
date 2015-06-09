@@ -1,0 +1,32 @@
+﻿@import "../base/_colors.scss";
+@import "../base/_mixins.scss";
+
+.links-list-container {
+    .links-list {
+        @include flex-container();
+
+        .link-item {
+            position: relative;
+            flex: 0 0 128;
+            margin: 5px;
+            width: 128px;
+            height: 128px;
+            overflow: hidden;
+            background-color: $color-accent-2;
+
+            .link-icon {
+                position: absolute;
+                left: 40px;
+                top: 20px;
+            }
+
+            .title {
+                position: absolute;
+                bottom: 20px;
+                width: 100%;
+                text-align: center;
+                color: #ffF;
+            }
+        }
+    }
+}

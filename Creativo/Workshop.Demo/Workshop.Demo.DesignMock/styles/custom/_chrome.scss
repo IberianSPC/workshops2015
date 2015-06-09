@@ -1,0 +1,44 @@
+﻿@import "../base/colors";
+@import "../base/mixins";
+@import "../base/fonts";
+
+body {
+    margin: 0;
+    color: $color-font;
+    font-family: $font-content;
+    background: #f7f7f7;
+}
+
+#site-container {
+    > header {
+        @include flex-container;
+        background: #fff;
+        box-shadow: rgba(0,0,0,0.4) 0 0 5px;
+    }
+}
+
+#site-body {
+    padding: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .news-list-container {
+        .news-list {
+            .new-item {
+                flex: 1 1 48%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .news-list-container {
+        .news-list {
+            flex-flow: column wrap;
+
+            .new-item {
+                flex: 1 1 auto;
+            }
+        }
+    }
+}

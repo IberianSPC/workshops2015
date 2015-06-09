@@ -1,0 +1,25 @@
+﻿.links-list-container .links-list {
+  display: flex;
+  display: -webkit-flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .links-list-container .links-list .link-item {
+    position: relative;
+    flex: 0 0 128;
+    margin: 5px;
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+    background-color: #00B0Ca; }
+    .links-list-container .links-list .link-item .link-icon {
+      position: absolute;
+      left: 40px;
+      top: 20px; }
+    .links-list-container .links-list .link-item .title {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #ffF; }
+
+/*# sourceMappingURL=links.css.map */

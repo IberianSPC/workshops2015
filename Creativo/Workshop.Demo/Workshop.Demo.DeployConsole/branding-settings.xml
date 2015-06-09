@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<branding url="https://sporras.sharepoint.com/">
+    <sites>
+        <site url="/sites/ispc2015test" />
+    </sites>
+
+    <files>
+        <file name="logo.png" path="Style Library" folder="branding-test/images/layout" location="Branding/Assets/images/layout"/>
+        <file name="arrow-menu-down.png" path="Style Library" folder="branding-test/images/icons" location="Branding/Assets/images/icons"/>
+        <file name="arrow-menu-up.png" path="Style Library" folder="branding-test/images/icons" location="Branding/Assets/images/icons"/>
+        <file name="styles.css" path="Style Library" folder="branding-test/styles" location="Branding/Assets/styles"/>
+    </files>
+    <masterpages>
+        <masterpage name="branding-demo.master" folder="branding/masterpages" />
+    </masterpages>
+    <pagelayouts>
+        <pagelayout name="NewsLayout.aspx" folder="branding/pagelayouts" title="Layout de noticias" />
+    </pagelayouts>
+</branding>

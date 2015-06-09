@@ -1,0 +1,27 @@
+﻿@import "../base/colors";
+@import "colors";
+
+@mixin link {
+    color: $color-link-fg;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+}
+
+@mixin button {
+    color: $color-button-fg;
+    background-color: $color-button-bg;
+    padding: 12px 10px;
+
+    &:hover {
+    }
+}
+
+@mixin flex-container {
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}

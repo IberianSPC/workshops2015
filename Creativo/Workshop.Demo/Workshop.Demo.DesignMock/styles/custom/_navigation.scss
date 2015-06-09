@@ -1,0 +1,89 @@
+﻿@import "../base/_colors.scss";
+@import "../base/_icons.scss";
+@import "../base/_layouts.scss";
+@import "../base/_mixins.scss";
+
+#site-nav {
+    flex: 1 1 auto;
+    align-self: flex-end;
+    @include flex-container;
+    justify-content: center;
+
+    item {
+        flex: 0 1 120px;
+        text-align: center;
+
+        a {
+            display: block;
+            transition: all 0.4s;
+            margin: 0;
+            padding: 10px 15px;
+            border-bottom: 5px solid transparent;
+            font-size: 23px;
+
+            &:hover {
+                border-bottom: 5px solid $color-palette-2;
+                background-color: $color-palette-3;
+                color: #fff;
+            }
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.ms-core-listMenu-root {
+        margin: 0;
+        list-style: none;
+
+        li.static {
+            display: inline-block;
+            height: 95px;
+            line-height: 70px;
+
+            a {
+                box-sizing: border-box;
+                display: inline-block;
+                transition: all 0.4s;
+                margin: 0;
+                padding: 10px 15px;
+                padding-right: 30px;
+                border-bottom: 5px solid transparent;
+                font-size: 19px;
+                font-weight: 100;
+                text-decoration: none;
+                background: $icon-arrow-down no-repeat 95% center;
+
+                &:hover {
+                    border-bottom: 5px solid $color-palette-2;
+                    background: $color-palette-3 $icon-arrow-up no-repeat 95% center;
+                    color: #fff;
+                    -moz-transition: all 0.2s;
+                    -o-transition: all 0.2s;
+                    -webkit-transition: all 0.2s;
+                    transition: all 0.2s;
+                }
+
+                &.selected {
+                    color: #fff;
+                    -moz-transition: all 0.2s;
+                    -o-transition: all 0.2s;
+                    -webkit-transition: all 0.2s;
+                    transition: all 0.2s;
+                    background: $color-palette-3 $icon-arrow-up no-repeat 95% center;
+                    border-bottom: 5px solid $color-palette-1;
+                }
+            }
+        }
+
+        li.ms-listMenu-editLink {
+            display: none;
+        }
+
+        .ms-hidden {
+            display: none;
+        }
+    }
+}

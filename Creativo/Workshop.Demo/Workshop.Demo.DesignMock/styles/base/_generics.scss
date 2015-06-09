@@ -1,0 +1,34 @@
+﻿@import "colors";
+@import "fonts";
+
+a {
+    color: $color-link-fg;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+
+        &:active {
+        color: $color-link-hover;
+    }
+
+    &:visited {
+        color: $color-link-fg;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+//cabeceras
+@for $i from 1 through 5 {
+    h#{$i} {
+        $headlinesizeMath: (30-($i*4));
+        font-size: #{$headlinesizeMath}px;
+        font-family: $font-title;
+        font-weight: 200;
+        /*line-height: 1.4em;*/
+    }
+}

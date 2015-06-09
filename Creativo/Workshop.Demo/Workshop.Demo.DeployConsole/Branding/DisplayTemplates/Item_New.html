@@ -1,0 +1,89 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Noticia resumen</title>
+
+    <!--[if gte mso 9]><xml>
+    <mso:CustomDocumentProperties>
+    <mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+    <mso:ManagedPropertyMapping msdt:dt="string">
+        'Picture URL'{Picture URL}:'PublishingImage;PictureURL;PictureThumbnailURL',
+        'ArticleDate'{Fecha de artÌculo}:'ArticleStartDateOWSDATE',
+        'Title'{TÌtulo}:'Title',
+        'ArticleByLine'{Resumen}:'ArticleByLineOWSTEXT',
+        'Link URL'{Link URL}:'Path',
+        'ItemID':'ItemID',
+        'ListID':'ListID',
+        'SPSiteURL':'SPSiteURL'
+    </mso:ManagedPropertyMapping>
+
+    <mso:MasterPageDescription msdt:dt="string">Esta plantilla para mostrar de elementos mostrar√° una imagen del elemento con el t√≠tulo de este superpuesto. Se recomienda utilizar con la plantilla para mostrar de control de presentaci√≥n y con im√°genes con un ancho superior a 400 p√≠xeles.</mso:MasterPageDescription>
+    <mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+    <mso:TargetControlType msdt:dt="string">;#Content Web Parts;#</mso:TargetControlType>
+    <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+    <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+    <mso:HtmlDesignStatusAndPreview msdt:dt="string">https://sporras.sharepoint.com/_catalogs/masterpage/Display Templates/Content Web Parts/Item_New.html, ConversiÛn correcta.</mso:HtmlDesignStatusAndPreview>
+    </mso:CustomDocumentProperties>
+    </xml><![endif]-->
+</head>
+
+<body>
+
+    <!--
+            Warning: Do not try to add HTML to this section. Only the contents of the first <div>
+            inside the <body> tag will be used while executing Display Template code. Any HTML that
+            you add to this section will NOT become part of your Display Template.
+    -->
+    <script>
+        $includeLanguageScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Language Files/{Locale}/CustomStrings.js");
+    </script>
+
+    <!--
+        Use the div below to author your Display Template. Here are some things to keep in mind:
+        * Surround any JavaScript logic as shown below using a "pound underscore" (#_ ... _#) token
+        inside a comment.
+
+        * Use the values assigned to your variables using an "underscore pound equals"
+        (_#= ... =#_) token.
+    -->
+
+    <div id="Item_LargePicture">
+
+        <!--#_
+        var listId = ctx.CurrentItem.ListID;
+        var listItemId = ctx.CurrentItem.ItemID;
+        var encodedId = $htmlEncode(ctx.ClientControl.get_nextUniqueId() + "_news_");
+
+        var pictureURL = $getItemValue(ctx, "Picture URL");
+        if (pictureURL == '') {
+            pictureURL = 'http://www.lorempixel.com/400/200/technics';
+        }
+        var siteUrl = $getItemValue(ctx, "SPSiteURL");
+        var linkURL = $getItemValue(ctx, "Link URL");
+        linkURL.overrideValueRenderer($urlHtmlEncode);
+
+
+        var containerId = encodedId + "container";
+
+        var title = $getItemValue(ctx, "Title");
+        var summary = $getItemValue(ctx, "ArticleByLine");
+        var date = $getItemValue(ctx, "ArticleDate");
+        var articleDate = "";
+
+        if (date != null && date.value != null)
+            articleDate = Date.now().localeFormat('dd MMMM yyyy');
+
+    _#-->
+        <article class="new-item" id="_#= containerId =#_" data-displaytemplate="ItemNew">
+            <header><h2 class="new-title"><a href="_#= linkURL =#_">_#= title =#_</a></h2></header>
+            <div class="new-picture" style="background-image: url(_#= pictureURL =#_)"></div>
+            <div class="new-data">
+                _#= summary =#_
+            </div>
+            <footer>
+                <div class="new-date">_#= date =#_</div>
+                <!--<div class="new-author">_#= title =#_</div>-->
+            </footer>
+        </article>
+    </div>
+</body>
+</html>

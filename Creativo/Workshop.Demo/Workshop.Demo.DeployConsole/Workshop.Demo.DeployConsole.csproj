@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{28B4DF4D-05C4-48F7-8DFE-254FEE60F600}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Workshop.Demo.DeployConsole</RootNamespace>
+    <AssemblyName>Workshop.Demo.DeployConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Client, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrandingHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Branding\Assets\scripts\jslink\PercentComplete.js" />
+    <Content Include="Branding\Assets\styles\dist\styles.css" />
+    <Content Include="Branding\Assets\fonts\Lato\OFL.txt" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\OFL.txt" />
+    <Content Include="Branding\Assets\images\icons\arrow-menu-down.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Branding\Assets\images\icons\arrow-menu-up.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Branding\Assets\images\layout\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Branding\Assets\scripts\hammer.js\hammer.js" />
+    <Content Include="Branding\Assets\scripts\hammer.js\hammer.min.js" />
+    <Content Include="Branding\Assets\scripts\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="Branding\Assets\scripts\jquery-validation\jquery.validate.js" />
+    <Content Include="Branding\Assets\scripts\jquery\jquery-migrate.js" />
+    <Content Include="Branding\Assets\scripts\jquery\jquery-migrate.min.js" />
+    <Content Include="Branding\Assets\scripts\jquery\jquery.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Branding\Assets\scripts\jquery\jquery.min.js" />
+    <Content Include="Branding\DisplayTemplates\Control_Links.html" />
+    <Content Include="Branding\DisplayTemplates\Control_News.html" />
+    <Content Include="Branding\DisplayTemplates\Item_Link.html" />
+    <Content Include="Branding\DisplayTemplates\Item_New.html" />
+    <Content Include="Branding\Masterpages\branding-demo.html" />
+    <Content Include="Branding\PageLayouts\HomeLayout.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Branding\PageLayouts\NewsLayout.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <None Include="App.config" />
+    <Content Include="Branding\Assets\styles\base\_buttons.scss" />
+    <Content Include="Branding\Assets\styles\base\_colors.scss" />
+    <Content Include="Branding\Assets\styles\base\_fonts.scss" />
+    <Content Include="Branding\Assets\styles\base\_forms.scss" />
+    <Content Include="Branding\Assets\styles\base\_generics.scss" />
+    <Content Include="Branding\Assets\styles\base\_icons.scss" />
+    <Content Include="Branding\Assets\styles\base\_layouts.scss" />
+    <Content Include="Branding\Assets\styles\base\_mixins.scss" />
+    <Content Include="Branding\Assets\styles\base\_settings.scss" />
+    <Content Include="Branding\Assets\styles\base\_typography.scss" />
+    <Content Include="Branding\Assets\styles\custom\_chrome.scss" />
+    <Content Include="Branding\Assets\styles\custom\_navigation.scss" />
+    <Content Include="Branding\Assets\styles\styles.css">
+      <DependentUpon>styles.scss</DependentUpon>
+    </Content>
+    <Content Include="Branding\Assets\styles\styles.min.css">
+      <DependentUpon>styles.css</DependentUpon>
+    </Content>
+    <Content Include="Branding\Assets\styles\styles.scss" />
+    <Content Include="Branding\Assets\styles\styles.css.map">
+      <DependentUpon>styles.css</DependentUpon>
+    </Content>
+    <Content Include="Branding\Assets\fonts\Lato\Lato-Black.ttf" />
+    <Content Include="Branding\Assets\fonts\Lato\Lato-BlackItalic.ttf" />
+    <Content Include="Branding\Assets\fonts\Lato\Lato-Bold.ttf" />
+    <Content Include="Branding\Assets\fonts\Lato\Lato-BoldItalic.ttf" />
+    <Content Include="Branding\Assets\fonts\Lato\Lato-Hairline.ttf" />
+    <Content Include="Branding\Assets\fonts\Lato\Lato-HairlineItalic.ttf" />
+    <Content Include="Branding\Assets\fonts\Lato\Lato-Italic.ttf" />
+    <Content Include="Branding\Assets\fonts\Lato\Lato-Light.ttf" />
+    <Content Include="Branding\Assets\fonts\Lato\Lato-LightItalic.ttf" />
+    <Content Include="Branding\Assets\fonts\Lato\Lato-Regular.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-Black.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-Bold.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-BoldItalic.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-ExtraLight.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-ExtraLightItalic.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-Italic.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-Light.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-LightItalic.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-Regular.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-SemiBold.ttf" />
+    <Content Include="Branding\Assets\fonts\Titillium_Web\TitilliumWeb-SemiBoldItalic.ttf" />
+    <Content Include="Branding\Assets\scripts\hammer.js\hammer.min.map" />
+    <Content Include="Branding\Assets\scripts\jquery\jquery.min.map" />
+    <None Include="Branding\Masterpages\branding-demo.master">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="branding-settings.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Branding\Assets\styles\components\" />
+    <Folder Include="Branding\Assets\styles\dist\base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
