@@ -1,0 +1,33 @@
+string sQuery = @"<FieldRef Name=""Title"" /><FieldRef Name=""Apellido"" /><FieldRef Name=""Organizacion"" />";
+string sViewFields = @"<FieldRef Name=""Title"" /><FieldRef Name=""Apellido"" /><FieldRef Name=""Organizacion"" />";
+string sViewAttrs = @"";
+uint iRowLimit = 0;
+
+var oQuery = new SPQuery();
+oQuery.Query = sQuery;
+oQuery.ViewFields = sViewFields;
+oQuery.ViewAttributes = sViewAttrs;
+oQuery.RowLimit = iRowLimit;
+
+SPListItemCollection collListItems = oList.GetItems(oQuery);
+
+foreach (SPListItem oListItem in collListItems)
+{
+}
+
+"<View><ViewFields><FieldRef Name='ID'/><FieldRef Name='Title'/><FieldRef Name='Apellido'/><FieldRef Name='Organizacion'/></ViewFields></View>";%7B5173B1C7%2D2ED1%2D40BE%2DB03B%2D4763DAA52E62%7D
+
+
+
+http://spdev/_api/search/query?querytext='fabian'
+
+
+https://florida1.sharepoint.com/sites/pn/?
+
+
+?11?:?21? ?AM 
+Pruebaspo@fifco.com?
+
+
+  
+Vanenavar2311?
